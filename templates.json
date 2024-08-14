@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "name": "Corporate Professional Template",
+    "image_url": "/avatar.jpg",
+    "price": {
+      "usd": 29.99,
+      "eur": 27.99,
+      "inr": 2299
+    },
+    "description": "A polished and corporate-styled template suitable for business professionals.",
+    "features": [
+      "Executive summary section",
+      "Team introductions",
+      "Investor information"
+    ],
+    "category": "Professional"
+  },
+  {
+    "id": 2,
+    "name": "Freelancer Template",
+    "image_url": "/kunal.jpg",
+    "price": {
+      "usd": 22.99,
+      "eur": 20.99,
+      "inr": 1799
+    },
+    "description": "A versatile template designed for freelancers to showcase their work.",
+    "features": [
+      "Portfolio display",
+      "Service offerings",
+      "Client testimonials"
+    ],
+    "category": "Professional"
+  },
+  {
+    "id": 3,
+    "name": "Consultant Template",
+    "image_url": "/bill.jpg",
+    "price": {
+      "usd": 25.99,
+      "eur": 23.99,
+      "inr": 1999
+    },
+    "description": "A template tailored for consultants to present their expertise and solutions.",
+    "features": [
+      "Case studies",
+      "Services section",
+      "Industry insights"
+    ],
+    "category": "Professional"
+  },
+  {
+    "id": 4,
+    "name": "Academic Template",
+    "image_url": "/elon.jpg",
+    "price": {
+      "usd": 18.99,
+      "eur": 16.99,
+      "inr": 1399
+    },
+    "description": "A scholarly template for academics to highlight their research and publications.",
+    "features": [
+      "Research papers section",
+      "Conference presentations",
+      "Academic achievements"
+    ],
+    "category": "Professional"
+  },
+  {
+    "id": 5,
+    "name": "Executive Template",
+    "image_url": "/shetty.jpg",
+    "price": {
+      "usd": 34.99,
+      "eur": 32.99,
+      "inr": 2699
+    },
+    "description": "A sophisticated template for executives and senior professionals.",
+    "features": [
+      "Leadership profile",
+      "Strategic initiatives",
+      "Board memberships"
+    ],
+    "category": "Professional"
+  },
+  {
+    "id": 6,
+    "name": "Artistic Template",
+    "image_url": "/evans.jpg",
+    "price": {
+      "usd": 27.99,
+      "eur": 25.99,
+      "inr": 2099
+    },
+    "description": "An expressive and colorful template for artists to showcase their work.",
+    "features": [
+      "Visual galleries",
+      "Creative projects",
+      "Exhibition history"
+    ],
+    "category": "Creative"
+  },
+  {
+    "id": 7,
+    "name": "Graphic Designer Template",
+    "image_url": "/dolph.jpg",
+    "price": {
+      "usd": 24.99,
+      "eur": 22.99,
+      "inr": 1899
+    },
+    "description": "A vibrant template for graphic designers to present their portfolios.",
+    "features": [
+      "Design showcase",
+      "Branding projects",
+      "Collaborations"
+    ],
+    "category": "Creative"
+  },
+  {
+    "id": 8,
+    "name": "Musician Template",
+    "image_url": "/bansal.jpg",
+    "price": {
+      "usd": 26.99,
+      "eur": 24.99,
+      "inr": 1999
+    },
+    "description": "A dynamic template for musicians to share their music and upcoming events.",
+    "features": [
+      "Music player integration",
+      "Concert schedule",
+      "Discography"
+    ],
+    "category": "Creative"
+  },
+  {
+    "id": 9,
+    "name": "Health & Wellness Template",
+    "image_url": "/alagh.jpg",
+    "price": {
+      "usd": 21.99,
+      "eur": 19.99,
+      "inr": 1699
+    },
+    "description": "A calming template for health and wellness professionals to engage with clients.",
+    "features": [
+      "Service offerings",
+      "Wellness tips",
+      "Client success stories"
+    ],
+    "category": "Health"
+  },
+  {
+    "id": 10,
+    "name": "Non-Profit Template",
+    "image_url": "/avatar.jpg",
+    "price": {
+      "usd": 23.99,
+      "eur": 21.99,
+      "inr": 1799
+    },
+    "description": "An inspiring template for non-profits to promote their mission and initiatives.",
+    "features": [
+      "Donation integration",
+      "Volunteer opportunities",
+      "Impact stories"
+    ],
+    "category": "Non-Profit"
+  }
+]
