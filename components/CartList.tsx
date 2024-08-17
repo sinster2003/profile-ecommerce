@@ -33,7 +33,7 @@ const CartList = () => {
         })
       }
     }
-  }, [scrollCount, initial]);
+  }, [scrollCount, initial, cartList]);
 
   return (
     <div ref={scrollItem} className="flex flex-col gap-5 items-center my-10 px-10 max-h-[50vh] overflow-scroll">

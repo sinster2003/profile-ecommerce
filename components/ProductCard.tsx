@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { TemplateType } from "../types"
 import AddToCart from "./AddToCart"
+import Price from "./Price"
 
 const ProductCard = ({ item }: { item: TemplateType }) => {
   return (
@@ -11,7 +12,7 @@ const ProductCard = ({ item }: { item: TemplateType }) => {
         <span className="text-center w-[60%]">{item.description.length > 70 ? `${item.description.slice(0, 70)}...` : item.description}</span>
       </div>
       <div className="text-2xl text-red-main font-semibold">
-        <span>${item.price.usd}</span>
+        <Price price={item.price}/>
       </div>
       <ul className="flex flex-col gap-0.5 py-4 list-disc">
         {item.features.map(feature => <li key={feature} className="text-darkblue">{feature}</li>)}

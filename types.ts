@@ -1,4 +1,4 @@
-interface PriceType {
+export interface PriceType {
     usd: number;
     eur: number;
     inr: number;
@@ -15,3 +15,5 @@ export interface TemplateType {
     quantity?: number;
     span?: number
 }
+
+export type currencyType = "usd" | "inr" | "eur"

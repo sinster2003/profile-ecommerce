@@ -2,6 +2,7 @@ import { ShoppingCartIcon } from "lucide-react"
 import Image from "next/image"
 import CartCount from "./CartCount"
 import Link from "next/link"
+import SelectCurr from "./SelectCurr"
 
 const Navbar = () => {
   return (
@@ -10,10 +11,13 @@ const Navbar = () => {
             <Image src="https://p1.edge.duggup.com/logo/Profile_Icon_Full_Color_28px.svg" alt="logo" width={27} height={27}/>
             <span className="text-[23px] font-medium tracking-tight">ecommerce</span>
         </Link>
-        <Link href="/cart" className="relative">
+        <div className="flex items-center gap-8">
+          <SelectCurr/>
+          <Link href="/cart" className="relative">
             <CartCount/>
             <ShoppingCartIcon/>
-        </Link>
+          </Link>
+        </div>
     </div>
   )
 }
