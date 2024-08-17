@@ -2,11 +2,16 @@
 
 import { useRecoilValue } from "recoil"
 import cartAtom from "../atoms/CartAtom"
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { TemplateType } from './../types';
 
 const CartCount = () => {
   const cartItems = useRecoilValue(cartAtom);
+  const [initial, setInital] = useState(false);
+
+  useEffect(() => {
+    setInital(true);
+  }, [])
 
   const length = useMemo(() => {
     if(cartItems.length === 0) {
@@ -19,11 +24,11 @@ const CartCount = () => {
     }, 0);
 
     return quantityLength;
-  }, [cartItems]);
+  }, [cartItems, initial]);
 
   return (
     <div className="rounded-full bg-red-main flex justify-center items-center text-white absolute -top-3 -right-3 h-6 w-6 text-sm">
-      {length}
+      {initial ? length : 0}
     </div>
   )
 }

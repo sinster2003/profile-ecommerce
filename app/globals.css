@@ -5,3 +5,20 @@
 ::-webkit-scrollbar {
     width: 0;
 }
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 300px;
+    height: 4px;
+    background: #fe5a59;
+    border-radius: 20px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #fe5a59;
+    height: 20px;
+    width: 10px;
+}

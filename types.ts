@@ -13,4 +13,5 @@ export interface TemplateType {
     features: string[];
     category: string;
     quantity?: number;
+    span?: number
 }

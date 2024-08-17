@@ -16,7 +16,8 @@ const config: Config = {
         "darkblue": "#2c3e5b",
         "headerblue": "#0e2084",
         "red": {
-          "main": "#fe5a59"
+          "main": "#fe5a59",
+          "light": "#feefe0"
         }
       }
     },

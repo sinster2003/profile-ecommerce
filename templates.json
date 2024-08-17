@@ -14,7 +14,8 @@
       "Team introductions",
       "Investor information"
     ],
-    "category": "Professional"
+    "category": "Professional",
+    "span": 8
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
       "Service offerings",
       "Client testimonials"
     ],
-    "category": "Professional"
+    "category": "Professional",
+    "span": 4
   },
   {
     "id": 3,
@@ -48,7 +50,8 @@
       "Services section",
       "Industry insights"
     ],
-    "category": "Professional"
+    "category": "Professional",
+    "span": 4
   },
   {
     "id": 4,
@@ -65,7 +68,8 @@
       "Conference presentations",
       "Academic achievements"
     ],
-    "category": "Professional"
+    "category": "Professional",
+    "span": 4
   },
   {
     "id": 5,
@@ -82,7 +86,8 @@
       "Strategic initiatives",
       "Board memberships"
     ],
-    "category": "Professional"
+    "category": "Professional",
+    "span": 4
   },
   {
     "id": 6,
@@ -99,7 +104,8 @@
       "Creative projects",
       "Exhibition history"
     ],
-    "category": "Creative"
+    "category": "Creative",
+    "span": 4
   },
   {
     "id": 7,
@@ -116,7 +122,8 @@
       "Branding projects",
       "Collaborations"
     ],
-    "category": "Creative"
+    "category": "Creative",
+    "span": 8
   },
   {
     "id": 8,
@@ -127,30 +134,32 @@
       "eur": 24.99,
       "inr": 1999
     },
-    "description": "A dynamic template for musicians to share their music and upcoming events.",
+    "description": "A dynamic template for musicians to share their music events.",
     "features": [
       "Music player integration",
       "Concert schedule",
       "Discography"
     ],
-    "category": "Creative"
+    "category": "Creative",
+    "span": 4
   },
   {
     "id": 9,
-    "name": "Health & Wellness Template",
+    "name": "Health Template",
     "image_url": "/alagh.jpg",
     "price": {
       "usd": 21.99,
       "eur": 19.99,
       "inr": 1699
     },
-    "description": "A calming template for health and wellness professionals to engage with clients.",
+    "description": "A calming template for health professionals to engage with clients.",
     "features": [
       "Service offerings",
       "Wellness tips",
       "Client success stories"
     ],
-    "category": "Health"
+    "category": "Health",
+    "span": 4
   },
   {
     "id": 10,
@@ -167,6 +176,7 @@
       "Volunteer opportunities",
       "Impact stories"
     ],
-    "category": "Non-Profit"
+    "category": "Non-Profit",
+    "span": 4
   }
 ]

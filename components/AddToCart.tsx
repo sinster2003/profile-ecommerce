@@ -20,7 +20,7 @@ const AddToCart = ({ item }: { item: TemplateType }) => {
   }
 
   return (
-    <button className="py-4 my-2 px-8 bg-red-main text-white rounded-full" onClick={handleClick}>
+    <button className="py-4 mb-6 px-8 bg-red-main text-white rounded-full" onClick={handleClick}>
       Add to Cart
     </button>
   )
