@@ -33,7 +33,7 @@ const RemoveAndPriceButton = ({ item }: {item: TemplateType}) => {
   }
 
   return (
-    <div className="bg-red-main rounded-tr-xl rounded-br-xl h-full flex justify-center items-center text-white w-[100px] cursor-pointer" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} onClick={handleRemoveItem}>
+    <div className="bg-red-main rounded-tr-xl rounded-br-xl h-full md:flex md:justify-center md:items-center text-white hidden md:w-[100px] cursor-pointer" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} onClick={handleRemoveItem}>
       {initial && (isMouseOver ? <X/> : `${unit}${(item.price[currency] * (item.quantity || 1)).toFixed(2)}`)}
     </div>
   )

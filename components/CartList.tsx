@@ -52,7 +52,7 @@ const CartList = () => {
 
   return (
     <>
-    {initial && <div ref={scrollItem} className={`flex flex-col gap-5 items-center my-10 px-10 max-h-[50vh] overflow-scroll ${cartList.length === 0 && "h-[70vh] justify-center"}`}>
+    {initial && <div ref={scrollItem} className={`flex flex-col gap-8 md:gap-5 items-center my-6 md:my-10 px-4 md:px-10 max-h-[50vh] overflow-scroll ${cartList.length === 0 && "h-[70vh] justify-center"}`}>
       {(cartList.length > 0 ? cartList.map(item => <CartListCard key={item.id} item={item}/>) : <EmptyCart/>)}
     </div>}
     </>

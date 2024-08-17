@@ -27,7 +27,7 @@ const TotalSum = () => {
   }, [cartItems, initial, currency]);
 
   return (
-    <div className="flex flex-col gap-2 w-[60%]">
+    <div className="flex flex-col gap-2 w-full md:w-[60%]">
         <div className="flex flex-col gap-1.5 py-3">
           <p className="flex justify-between items-center">Subtotal: <span>{initial ? `${unit}${subtotal.toFixed(2)}` : `$0.00`}</span></p>
           <p className="flex justify-between items-center">Discount: <span className="text-green-500">{(!initial || cartItems.length === 0) ? "Nil" : "- 10%"}</span></p>

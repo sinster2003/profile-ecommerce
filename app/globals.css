@@ -22,3 +22,9 @@ input[type="range"]::-webkit-slider-thumb {
     height: 20px;
     width: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    input[type="range"] {
+        width: 200px;
+    } 
+}

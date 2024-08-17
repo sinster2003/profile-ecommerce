@@ -22,7 +22,7 @@ const SelectCurr = () => {
   return (
     <div className="flex gap-1 items-center">
       {initial && <Image src={`/${currency}.png`} alt={currency} width={32} height={32}/>}
-      <select value={currency} onChange={(e) => setCurrency(e.target.value)} className="outline-none">
+      <select className="bg-transparent outline-none" value={currency} onChange={(e) => setCurrency(e.target.value)}>
         <option value="usd">
           USD
         </option>

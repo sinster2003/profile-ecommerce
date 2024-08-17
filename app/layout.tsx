@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={`${inter.className} relative`}>
         <RecoilProvider>
           <Navbar/>
-          <div className="mx-20">
+          <div className="mx-[30px] md:mx-20">
             {children}
           </div>
         </RecoilProvider>
