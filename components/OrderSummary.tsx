@@ -1,15 +1,13 @@
-import AddToCart from "./AddToCart"
+import TotalSum from "./TotalSum"
 
 const OrderSummary = () => {
     return (
-      <div className="flex flex-col rounded-3xl bg-[#feefe0] min-h-96 p-10 relative">
+      <div className="flex flex-col rounded-3xl bg-[#feefe0] min-h-96 p-10 relative items-center justify-between">
         <h2 className="text-2xl text-darkblue font-medium text-center">
           Order Summary
         </h2>
-        <div>
-
-        </div>
-        <button className="absolute bottom-4 left-[50%] -translate-x-1/2 py-4 my-2 px-8 bg-red-main text-white rounded-full">
+        <TotalSum/>
+        <button className="py-4 mt-2 mb-0 px-8 bg-red-main text-white rounded-full">
           Checkout
         </button>
       </div>

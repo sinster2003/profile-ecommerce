@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { TemplateType } from "../types"
 import QuantityButton from "./QuantityButton"
+import RemoveAndPriceButton from "./RemoveAndPriceButton"
 
 const CartListCard = ({ item }: { item: TemplateType}) => {
   return (
@@ -13,9 +14,7 @@ const CartListCard = ({ item }: { item: TemplateType}) => {
                     <p className="text-sm">Quantity: {item.quantity}</p>
                 </div>
             </div>
-            <div className="bg-red-main rounded-tr-xl rounded-br-xl h-full flex justify-center items-center text-white w-20">
-                ${(item.price.usd * (item.quantity || 1)).toFixed(2)} 
-            </div>
+            <RemoveAndPriceButton item={item}/>
         </div>
         <QuantityButton item={item} />
     </div>

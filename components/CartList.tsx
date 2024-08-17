@@ -8,8 +8,8 @@ const CartList = () => {
   const cartList = useRecoilValue(cartAtom);
 
   return (
-    <div className="flex flex-col gap-5 items-center my-10 px-10 max-h-[60vh] overflow-scroll">
-        {cartList.map(item => <CartListCard key={item.id} item={item}/>)}
+    <div className="flex flex-col gap-5 items-center my-10 px-10 max-h-[50vh] overflow-scroll">
+      {cartList.map(item => <CartListCard key={item.id} item={item}/>)}
     </div>
   )
 }
