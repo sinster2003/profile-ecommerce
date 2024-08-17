@@ -1,3 +1,4 @@
+import Checkout from "./Checkout"
 import TotalSum from "./TotalSum"
 
 const OrderSummary = () => {
@@ -7,9 +8,7 @@ const OrderSummary = () => {
           Order Summary
         </h2>
         <TotalSum/>
-        <button className="py-4 mt-2 mb-0 px-8 bg-red-main text-white rounded-full">
-          Checkout
-        </button>
+        <Checkout/>
       </div>
     )
 }

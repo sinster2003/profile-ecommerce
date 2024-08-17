@@ -3,6 +3,7 @@
 import { useRecoilState } from "recoil"
 import cartAtom from "../atoms/CartAtom"
 import { TemplateType } from "../types";
+import toast from "react-hot-toast";
 
 const AddToCart = ({ item }: { item: TemplateType }) => {
   const [cartValue, setCartValue] = useRecoilState(cartAtom);
@@ -17,6 +18,8 @@ const AddToCart = ({ item }: { item: TemplateType }) => {
       const prevQuantity = isPresent.quantity as number;
       setCartValue(cartValue.map(cartItem => cartItem.id === isPresent.id ? {...cartItem, quantity: prevQuantity + 1} : cartItem));
     }
+
+    toast.success(`${item.name} added into the cart`);
   }
 
   return (

@@ -6,6 +6,8 @@ import CartListCard from "./CartListCard";
 import { useEffect, useRef, useState } from "react";
 import sliderAtom from "../atoms/SliderAtom";
 import sliderVisibleAtom from "../atoms/SliderVisibleAtom";
+import EmptyCart from "./EmptyCart";
+import { CardItemSkeleton } from "./Skeleton";
 
 const CartList = () => {
   const cartList = useRecoilValue(cartAtom);
@@ -13,10 +15,12 @@ const CartList = () => {
   const setVisible = useSetRecoilState(sliderVisibleAtom);
   const scrollItem = useRef<HTMLDivElement>(null);
   const [initial, setInitial] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setInitial(true);
-  }, [])
+    setLoading(false);
+  }, []);
 
   useEffect(() => {
     if(scrollItem.current) {
@@ -35,10 +39,23 @@ const CartList = () => {
     }
   }, [scrollCount, initial, cartList]);
 
+  if(loading) {
+    return (
+      <div className={`flex flex-col gap-5 items-center my-10 px-10 h-[50vh]`}>
+        <CardItemSkeleton/>
+        <CardItemSkeleton/>
+        <CardItemSkeleton/>
+        <CardItemSkeleton/>
+      </div>
+    );
+  }
+
   return (
-    <div ref={scrollItem} className="flex flex-col gap-5 items-center my-10 px-10 max-h-[50vh] overflow-scroll">
-      {initial && cartList.map(item => <CartListCard key={item.id} item={item}/>)}
-    </div>
+    <>
+    {initial && <div ref={scrollItem} className={`flex flex-col gap-5 items-center my-10 px-10 max-h-[50vh] overflow-scroll ${cartList.length === 0 && "h-[70vh] justify-center"}`}>
+      {(cartList.length > 0 ? cartList.map(item => <CartListCard key={item.id} item={item}/>) : <EmptyCart/>)}
+    </div>}
+    </>
   )
 }
 

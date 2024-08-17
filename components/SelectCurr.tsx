@@ -8,10 +8,16 @@ import Image from "next/image";
 const SelectCurr = () => {
   const [initial, setInitial] = useState(false);
   const [currency, setCurrency] = useRecoilState(currencyAtom);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setInitial(true);
+    setLoading(false);
   }, []);
+
+  if(loading) {
+    return <Image src="/loading.gif" alt="Loading..." width={20} height={20}/>
+  }
 
   return (
     <div className="flex gap-1 items-center">

@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import cartAtom from "../atoms/CartAtom";
 import currencyAtom from "../atoms/CurrencyAtom";
+import toast from "react-hot-toast";
 
 const RemoveAndPriceButton = ({ item }: {item: TemplateType}) => {
   const [isMouseOver, setIsMouseOver] = useState(false);
@@ -28,6 +29,7 @@ const RemoveAndPriceButton = ({ item }: {item: TemplateType}) => {
 
   const handleRemoveItem = () => {
     setCartItems(cartItems => cartItems.filter(cartItem => cartItem.id !== item.id));
+    toast.success(`${item.name} removed from the cart`);
   }
 
   return (
