@@ -41,7 +41,7 @@ const CartList = () => {
 
   if(loading) {
     return (
-      <div className={`flex flex-col gap-5 items-center my-10 px-10 h-[50vh]`}>
+      <div className={`flex flex-col gap-5 items-center my-10 px-4 md:px-10 h-[50vh]`}>
         <CardItemSkeleton/>
         <CardItemSkeleton/>
         <CardItemSkeleton/>
